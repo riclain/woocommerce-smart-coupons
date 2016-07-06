@@ -16,16 +16,16 @@
 			text-align: center;
 			cursor: pointer;
 		}
-		.coupon-container.blue { background-color: #e0f7ff }
+		.coupon-container.blue { background-color: #D7E9FC }
 
 		.coupon-container.medium {
-			padding: .4em;
+			padding: .55em;
 			line-height: 1.4em;
 		}
 
 		.coupon-content.small { padding: .2em 1.2em }
-		.coupon-content.dashed { border: 2.3px dashed }
-		.coupon-content.blue { border-color: #c0d7ee }
+		.coupon-content.dashed { border: 1px dashed }
+		.coupon-content.blue { border-color: rgba(0,0,0,.28) }
 		.coupon-content .code {
 			font-family: monospace;
 			font-size: 1.2em;
@@ -67,6 +67,8 @@ $coupon_data = $this->get_coupon_meta_data( $coupon );
 	} else {
 		$coupon_target = home_url( '/?sc-page=shop&coupon-code=' . $coupon_code );
 	}
+
+	$coupon_target = apply_filters( 'sc_coupon_url_in_email', $coupon_target, $coupon );
 ?>
 
 <div style="margin: 10px 0; text-align: center;" title="<?php echo __( 'Click to visit store. This coupon will be applied automatically.', WC_Smart_Coupons::$text_domain ); ?>">

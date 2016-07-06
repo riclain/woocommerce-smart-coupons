@@ -1,10 +1,10 @@
 === WooCommerce Smart Coupons ===
-Contributors: niravmehta, ratnakar.dubey
+Contributors: niravmehta, ratnakar.dubey, Tarun.Parswani, Mansi Shah
 Donate link: http://www.storeapps.org/
 Tags: woocommerce, coupon, credit, store credit, gift, certificate, voucher, discount, gift certificate, gift voucher, customer, self service
 Requires at least: 3.5
-Tested up to: 4.4.1
-Stable tag: 3.0.10
+Tested up to: 4.5.2
+Stable tag: 3.1.1
 
 Powerful, "all in one" solution for gift certificates, store credits, discount coupons and vouchers. Allows customers to buy credits for themselves or gift them to others. Unique "Apply Coupon with One Click" technology during checkout, tight integration with WooCommerce and automatic maintenance.
 
@@ -41,7 +41,7 @@ Here's what you can do with this plugin:
 
 == Installation ==
 
-1. Ensure you have latest version of [WooCommerce](http://www.storeapps.org/woocommerce/) plugin installed
+1. Ensure you have latest version of [WooCommerce](https://www.woothemes.com/woocommerce/) plugin installed
 2. Unzip and upload the folder 'woocommerce-smart-coupons' to your `/wp-content/plugins/` directory
 3. Activate 'WooCommerce Smart Coupons' through the 'Plugins' menu in WordPress
 

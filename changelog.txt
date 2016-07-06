@@ -1,5 +1,65 @@
 *** WooCommerce Smart Coupons Changelog ***
 
+2016.06.20 - version 3.1.1
+ * Fix: Undefined index notice on My Account Page on WooCommerce 2.6.1
+ * Fix: Absence of rounding in tax causing wrong discounting when 'Product' or 'Product category' is set in store credit
+
+2016.06.16 - version 3.1
+ * New: Tested upto WooCommerce 2.6
+ * New: Coupons Tab under My Account page
+ * New: Coupon layout on front end
+ * Fix: Bulk generated storewide coupons not visible on cart, checkout & my account page
+ * Update: Added compatibility files for WooCommerce 2.5 & WooCommerce 2.6
+ * Update: POT file
+ * Tweak: Changed content on Welcome page
+
+2016.05.23 - version 3.0.17
+ * Fix: Warning messages of 'subquery returning more than one row' when showing coupons on cart, checkout & my account page
+
+2016.05.05 - version 3.0.16
+ * Fix: Fatal error during activation "empty() only supports variables"
+ * Fix: Send Store credit to others not working on checkout page
+
+2016.05.03 - version 3.0.15
+ * Fix: Related to the query optimization for showing coupons on cart, checkout & my account page
+ * Update: Query optimization for store credit type coupons showing on cart, checkout & my account page
+
+2016.04.27 - version 3.0.14
+ * Fix: Related to the query optimization for showing coupons on cart, checkout & my account page
+
+2016.04.27 - version 3.0.13
+ * Fix: Remove usage of get_currentuserinfo() which is deprecated in WordPress 4.5
+ * Fix: JavaScript error "unrecognized expression" when a coupon code containing special characters is applied
+ * Update: Added filter to modify coupon URL in email
+ * Update: Query optimization for showing coupons on cart, checkout & my account page
+
+2016.03.18 - version 3.0.12
+ * Fix: Fatal error: Call to a member function get() on a non-object in WooCommerce Subscriptions
+ * Fix: View subscription showing empty page
+ * Fix: Subscription list on admin side is broken
+ * Fix: "Send store credit" giving fatal error & many PHP notices & warnings
+ * Fix: Store Credit details sending in refunded order email as well
+ * Update: Compatibility file for WooCommerce greater than equal to 2.4.0 
+ * Update: Minor update in style of "Send" button on "Send Store Credit" page
+
+2016.03.11 - version 3.0.11
+ * New: Support for sending WooCommerce core discount types to friends
+ * New: Hook 'sc_generate_coupon_meta' to allow addition of coupon meta from 3rd party plugins
+ * Fix: CSS tweaks for Bulk Generate tab
+ * Fix: Store Credit are charged twice when user is registered from checkout page
+ * Fix: Use store's date format to show expiry date of coupon
+ * Fix: PHP Notice: Undefined index: QUERY_STRING
+ * Fix: Errors when manually triggering a renewal using the subscriptions action scheduler
+ * Fix: Auto generating coupon on subscription renewals even when it was set to not generate
+ * Fix: On subscription renewals, auto generated coupons was sent to customer who placed that order
+ * Update: Only add subscriptions filters when cart/order contains a subscription
+ * Update: Compatibility with WooCommerce Subscription 2.0.10+
+ * Update: POT file
+ * Update: Tested with WooCommerce Subscription v2.0.11
+ * Tweak: Welcome page content improvements
+ * Tweak: Minor change in handling URL arguments
+ * Tweak: Set renewal order status, when auto paid via store credit, to processing, only when order needs processing
+
 2016.01.25 - version 3.0.10
  * Fix: Fatal error: Call to undefined method WC_Subscriptions_Coupon::increase_coupon_discount_amount for WooCommerce Subscription lower than 2.0
  * Update: Tested upto WooCommerce 2.5

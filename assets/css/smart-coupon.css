@@ -8,36 +8,39 @@
     position: relative;
 }
 .coupon-container.previews { cursor: inherit }
-.coupon-container.blue { background-color: #e0f7ff }
-.coupon-container.red { background-color: #ffe0e0 }
-.coupon-container.green { background-color: #e0ffe0 }
-.coupon-container.yellow { background-color: #f7f7e0 }
+.coupon-container.blue { background-color: #D7E9FC }
+.coupon-container.red { background-color: #FFE7E1 }
+.coupon-container.green { background-color: #DCFADC }
+.coupon-container.yellow { background-color: #F7F6D8 }
 
 .coupon-container.small {
     padding: .3em;
     line-height: 1.2em;
 }
 .coupon-container.medium {
-    padding: .4em;
+    padding: .55em;
     line-height: 1.4em;
 }
 .coupon-container.large {
-    padding: .5em;
+    padding: .6em;
     line-height: 1.6em;
 }
 
 .coupon-content.small { padding: .2em 1.2em }
 .coupon-content.medium { padding: .4em 1.4em }
 .coupon-content.large { padding: .6em 1.6em }
-.coupon-content.dashed { border: 2.3px dashed }
+
+.coupon-content.dashed { border: 1px dashed }
 .coupon-content.dotted { border: 2.3px dotted }
-.coupon-content.groove { border: 2.3px groove }
+.coupon-content.groove { border: 1px groove }
 .coupon-content.solid { border: 2.3px solid }
 .coupon-content.none { border: 2.3px none }
-.coupon-content.blue { border-color: #c0d7ee }
-.coupon-content.red { border-color: #eec0c0 }
-.coupon-content.green { border-color: #c0eec0 }
-.coupon-content.yellow { border-color: #e0e0c0 }
+
+.coupon-content.blue { border-color: rgba(0,0,0,.28) }
+.coupon-content.red { border-color: rgba(0,0,0,.28) }
+.coupon-content.green { border-color: rgba(0,0,0,.28) }
+.coupon-content.yellow { border-color: rgba(0,0,0,.28) }
+
 .coupon-content .code {
     font-family: monospace;
     font-size: 1.2em;
@@ -140,8 +143,7 @@ div#coupon-selector {
 }
 
 /* Gift Cerificate form */
-input.gift_receiver_email { min-width: 100% }
-p.coupon_amount_label { text-align: center }
+input.gift_receiver_email { min-width: 100%; margin: 1% 0; }
 div#gift-certificate-receiver-form thead th { text-align: center }
 input#deliver_on_date { text-align: center }
 
@@ -167,7 +169,7 @@ a#single_multi { float: right }
     width: 100%;
 }
 
-textarea.gift_receiver_message { width: 97% }
+textarea.gift_receiver_message { width: 100% }
 
 .form_table {
     width: 97%;
@@ -179,12 +181,6 @@ textarea.gift_receiver_message { width: 97% }
 .message_row { width: 100% }
 .sc_message { width: 100% }
 .email_amount { width: 100% }
-.email { width: 80% }
-div.amount {
-    width: 20%;
-    float: right;
-    vertical-align: middle;
-}
 .gift-certificate-show-form p { margin: 0 }
 .gift-certificate-show-form lable { display: inline }
 .gift-certificate-show-form input[type=radio] { margin-left: 1em }

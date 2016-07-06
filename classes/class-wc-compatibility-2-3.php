@@ -16,7 +16,7 @@ if ( !class_exists( 'Smart_Coupons_WC_Compatibility_2_3' ) ) {
 			if ( self::is_wc_gte_23() ) {
 				return wc_get_price_thousand_separator();
 			} else {
-				return wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_thousand_sep' ) ), ENT_QUOTES );;
+				return wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_thousand_sep' ) ), ENT_QUOTES );
 			}
 		}
 
@@ -27,7 +27,7 @@ if ( !class_exists( 'Smart_Coupons_WC_Compatibility_2_3' ) ) {
 			if ( self::is_wc_gte_23() ) {
 				return wc_get_price_decimal_separator();
 			} else {
-				return wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_decimal_sep' ) ), ENT_QUOTES );;
+				return wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_decimal_sep' ) ), ENT_QUOTES );
 			}
 		}
 
